@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Oficina Mecânica</title>
+    <link rel="stylesheet" href="assets/css/agendamento.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Agendamento de Veículos e Serviços</h1>
+
+        <form id="agendamento-form" action="backend/agendamento.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="veiculo">Modelo do Veículo:</label>
+            <input type="text" id="veiculo" name="veiculo" placeholder="Ex: Ford Fiesta 2018" required>
+
+            <label for="servico">Selecione o Serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="troca_oleo">Troca de Óleo</option>
+                <option value="alinhamento">Alinhamento</option>
+                <option value="balanceamento">Balanceamento</option>
+                <option value="freios">Troca de Freios</option>
+                <option value="revisao">Revisão Completa</option>
+            </select>
+
+            <label for="data">Data do Agendamento:</label>
+            <input type="date" id="data" name="data" required>
+
+            <!-- Mensagem de erro -->
+            <div id="error-message" class="error-message" style="display: none;"></div>
+
+            <button type="submit">Agendar</button>
+        </form>
+
+        <p><a href="index.html">Voltar à página inicial</a></p>
+    </div>
+
+    <script src="assets/js/agendamento.js"></script>
+
+</body>
+</html>
+
+
+

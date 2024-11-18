@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Oficina Mecânica</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Login</h1>
+        <form id="login-form" action="backend/login.php" method="POST">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+            <!-- Mensagem de erro -->
+            <div id="error-message" class="error-message" style="display: none;"></div>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p>Ainda não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

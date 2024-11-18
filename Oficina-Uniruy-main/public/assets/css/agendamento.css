@@ -1,0 +1,149 @@
+/* Resetando margens e paddings para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(https://media.istockphoto.com/id/1347150429/pt/foto/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=41g7boJaSdIX-3EQm6iSR3U801XqI27TRTLvpPL6bu4=);
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container para o formulário */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9); /* Fundo translúcido para a área do formulário */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
+    text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+    font-size: 2.0em;
+    color: #2980b9;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Estilos para o formulário de agendamento */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Labels */
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+/* Campos de input */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    color: #333;
+    background-color: #f4f6f7;
+    transition: all 0.3s ease;
+}
+
+/* Foco nos campos de input */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #3498db;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Animação do botão */
+button[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px); /* Efeito de elevação */
+}
+
+/* Link de voltar */
+p {
+    font-size: 1em;
+    color: #34495e;
+}
+
+p a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Mensagens de erro */
+.error-message {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Responsividade para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+        font-size: 1.1em;
+    }
+
+    button[type="submit"] {
+        font-size: 1.1em;
+    }
+}
